@@ -1,0 +1,59 @@
+
+body{
+    text-align: center;
+    background-color: rgb(141, 137, 137);
+}
+
+
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background: blueviolet;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 5px;
+    
+    transition: all 0.2s;
+}
+
+.square:hover{
+    transform: scaleY(1.1);
+    transform: scaleX(1.1);
+    box-shadow: 2px 4px 3px rgb(36, 35, 35);
+}
+
+.O{
+    position: relative;
+}
+
+.O::after{
+    position: absolute;
+    content: "\2663";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+.X{
+    position: relative;
+    
+}
+
+.X::after{
+    position: absolute;
+    content: "\2660";
+    font-size: 50px;
+    line-height: 100px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
